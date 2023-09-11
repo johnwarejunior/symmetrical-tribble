@@ -1,5 +1,20 @@
 import os
+import sys
 from PIL import Image
+from PySide6 import QtWidgets, QtGui, QtCore
+
+# Build Application
+app = QtWidgets.QApplication(sys.argv)
+
+class spriteSheetGen(QtWidgets.QWidget): 
+   def __init__(self):
+      super().__init__()
+
+      layout = QtWidgets.QVBoxLayout()
+      self.setLayout(layout)
+
+# Create instance of program
+
 
 # Image Directory
 imgDir = './images/'
