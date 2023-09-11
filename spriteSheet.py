@@ -32,6 +32,9 @@ class spriteSheetGen(QtWidgets.QWidget):
       self.outWidth = 1024
       self.outHeight = 1024
 
+      # Application Title
+      self.setWindowTitle('Sprite Sheet Generator')
+
       # Building user interface buttons
       self.btnPath = QtWidgets.QPushButton('Image Path')
       self.btnPath.clicked.connect(self.selectDirectory)
